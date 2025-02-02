@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# MathcLink - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é o frontend atual do MatchLink, um WebApp que tem como objetivo conectar cada vez mais pessoas ao mundo do esporte e a outras pessoas tão interessadas quanto você nessa nova aventura.
 
-Currently, two official plugins are available:
+## 💻 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://pt-br.react.dev) versão: 18.3.1
+- [TypeScript](https://www.typescriptlang.org/docs/) versão: 5.6.2
+- [Tailwind](https://v3.tailwindcss.com) versão: 3.4.17
+- [Vite](https://vite.dev) versão: 6.0.5
 
-## Expanding the ESLint configuration
+## 🛠️ Como Rodar o Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o repositório:
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/MatGAAM/match-link
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Acesse a pasta do projeto match-link:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   cd match-link
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```
+
+3. Instale as dependencias:
+
+   ```bash
+   npm install
+
+   ```
+
+4. Rode o Projeto:
+   ```bash
+   npm run dev
+   ```
+
+Após isso, o projeto deve ser iniciado normalmente no localhost, com a porta informada no terminal.
+
+## 🎨 Referências de Design
+
+- Projeto no Figma: [MatchLink](https://www.figma.com/design/kScEDvA4UFbZGqeaUo53rP/Match-Link---APP?node-id=386-674&m=dev)
